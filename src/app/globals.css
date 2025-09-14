@@ -21,8 +21,7 @@
 
 @font-face {
   font-family: "Avoda";
-  src: url("/fonts/Avoda.woff2") format("woff2"),
-    url("/fonts/Avoda.woff") format("woff");
+  src: url("/fonts/avoda.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
