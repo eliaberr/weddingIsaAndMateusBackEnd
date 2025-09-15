@@ -10,6 +10,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-montserrat);
   --font-mono: var(--font-geist-mono);
+  --desktop: 1144px
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,6 +30,11 @@
 
 .font-avoda {
   font-family: "Avoda", sans-serif;
+}
+
+.desktop {
+  width: var(--desktop);
+  margin-inline: auto;
 }
 
 body {
