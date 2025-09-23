@@ -30,7 +30,7 @@ export default function NavBar() {
       }`}
     >
       <motion.div
-        className="bg-white h-full w-full absolute z-10"
+        className="bg-white/85 h-full w-full absolute z-10"
         initial={{ opacity: 0 }}
         animate={scrolled ? { opacity: 1 } : { opacity: 0 }}
         transition={{ duration: 0.4 }}

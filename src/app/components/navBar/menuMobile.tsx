@@ -1,5 +1,4 @@
 import { AnimatePresence, motion } from "motion/react";
-import { IoIosMenu } from "react-icons/io";
 import { OptionNavBar } from "./opitonNavBar";
 import { useState } from "react";
 import { MenuHamburger } from "./menuHamburger";

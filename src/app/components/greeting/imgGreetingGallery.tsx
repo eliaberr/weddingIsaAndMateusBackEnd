@@ -27,7 +27,7 @@ export function GreetingGallery() {
     },
   ];
   return (
-    <div className="grid gap-1 grid-cols-12 mt-20 relative">
+    <div className=" gap-1 grid-cols-12 mt-20 relative hidden lg:grid">
       {imgsGreetingGallery.map((item, index) => (
         <motion.div
           className={`col-span-3 w-[100px] absolute lg:relative lg:top-0 lg:w-full ${item.position}`}

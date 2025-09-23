@@ -9,6 +9,10 @@ export function GreetingText() {
       duration: 0.5,
     },
     {
+      text: "Hoje celebramos não apenas um encontro de corações, mas a concretização de um propósito divino. Deus, em Sua infinita bondade, guiou nossos passos até este momento especial, em que dois se tornam um só diante d’Ele.",
+      duration: 0.5,
+    },
+    {
       text: "Reconhecemos que o casamento é mais do que um contrato humano: é uma aliança sagrada, estabelecida pelo Criador desde o princípio. Assim como está escrito, “não é bom que o homem esteja só”, o Senhor nos deu a alegria de compartilhar a vida, a fé e os sonhos.",
       duration: 1.5,
     },
@@ -23,15 +27,15 @@ export function GreetingText() {
   ];
   return (
     <motion.div
-      className="text-start grid gap-5 mt-20"
+      className="text-start grid gap-5 mt-20 px-3 w-screen lg:px-0 lg:w-full"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 6 }}
       viewport={{ once: true, amount: 0.1 }}
     >
-      <h2 className="font-medium desktop">
+      <p className="font-medium col-span-3 text-justify">
         Com as bênçãos de nossos pais, nós damos início a esta união.
-      </h2>
+      </p>
       {textGreetingText.map((item, index) => (
         <motion.p
           className={`col-span-3 text-justify`}
@@ -39,15 +43,17 @@ export function GreetingText() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: item.duration }}
+          viewport={{ once: true }}
         >
           <p>{item.text}</p>
         </motion.p>
       ))}
       <motion.h3
-        className="font-medium"
+        className="font-medium col-span-3 text-justify"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 4}}
+        transition={{ duration: 4 }}
+        viewport={{ once: true }}
       >
         Para que todos vejam, e saibam, e considerem, e juntamente entendam que
         a mão do Senhor fez isto -{" "}

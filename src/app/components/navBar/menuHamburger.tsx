@@ -17,7 +17,7 @@ export function MenuHamburger({ onClick, openMenu }: MenuHamburgerProps) {
             initial={false}
             animate={openMenu ? { y: 10, rotate: 45 } : { y: 0, rotate: 0 }}
             transition={transition}
-            className={`absolute left-0 top-0 h-[2px] w-7 rounded-full ${openMenu ? "bg-red-700":"bg-white"}`}
+            className={`absolute left-0 top-0 h-[2px] w-7 rounded-full ${openMenu ? "bg-red-700":"bg-black"}`}
           />
           <motion.span
             initial={false}
@@ -25,13 +25,13 @@ export function MenuHamburger({ onClick, openMenu }: MenuHamburgerProps) {
               openMenu ? { opacity: 0, scaleX: 0 } : { opacity: 1, scaleX: 1 }
             }
             transition={transition}
-            className="absolute left-0 top-1/2 h-[2px] w-7 -translate-y-1/2 rounded-full bg-white"
+            className="absolute left-0 top-1/2 h-[2px] w-7 -translate-y-1/2 rounded-full bg-black"
           />
           <motion.span
             initial={false}
             animate={openMenu ? { y: -10, rotate: -45 } : { y: 0, rotate: 0 }}
             transition={transition}
-            className={`absolute left-0 bottom-0 h-[2px] w-7 rounded-full ${openMenu ? "bg-red-700":"bg-white"}`}
+            className={`absolute left-0 bottom-0 h-[2px] w-7 rounded-full ${openMenu ? "bg-red-700":"bg-black"}`}
           />
         </div>
       </button>
