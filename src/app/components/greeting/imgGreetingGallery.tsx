@@ -4,33 +4,34 @@ import { motion } from "motion/react";
 import Image from "next/image";
 
 export function GreetingGallery() {
+  
   const imgsGreetingGallery = [
     {
       src: "/assets/imgGreetingGallery1.jpg",
-      position: "pt-10 top-10",
+      position: "pt-10 top-0 left-1",
       animationPosition: -60,
     },
     {
       src: "/assets/imgGreetingGallery3.jpg",
-      position: "pb-10 top-40",
+      position: "pb-10 top-50 left-[20%]",
       animationPosition: 60,
     },
     {
       src: "/assets/imgGreetingGallery2.jpg",
-      position: "pt-10 top-80",
+      position: "pt-10 top-0 right-[20%]",
       animationPosition: -60,
     },
     {
       src: "/assets/imgGreetingGallery4.jpg",
-      position: "pb-10 top-90",
+      position: "pb-10 top-50 right-2",
       animationPosition: 60,
     },
   ];
   return (
-    <div className=" gap-1 grid-cols-12 mt-20 relative hidden lg:grid">
+    <div className=" gap-1 grid-cols-12 relative w-screen h-[350px] lg:w-full lg:h-auto lg:mt-20 lg:grid">
       {imgsGreetingGallery.map((item, index) => (
         <motion.div
-          className={`col-span-3 w-[100px] absolute lg:relative lg:top-0 lg:w-full ${item.position}`}
+          className={`col-span-3 w-[130px] absolute lg:relative lg:left-0 lg:top-0 lg:w-full ${item.position}`}
           key={index}
           initial={{ y: item.animationPosition, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}

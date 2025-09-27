@@ -29,7 +29,7 @@ export default function InformationWedding() {
         viewport={{ once: true, amount: 0.1 }}
         className="w-screen px-2 lg:px-0 lg:w-full"
       >
-        <div className="mt-15">
+        <motion.div className="mt-15">
           <h2 className="font-medium text-2xl">
             Informações sobre o Casamento
           </h2>
@@ -37,7 +37,7 @@ export default function InformationWedding() {
             Com muita alegria, convidamos você para celebrar conosco este
             momento tão especial!
           </p>
-        </div>
+        </motion.div>
         <div className="mt-10 text-start grid gap-3">
           <p>
             Nosso casamento será realizado no{" "}

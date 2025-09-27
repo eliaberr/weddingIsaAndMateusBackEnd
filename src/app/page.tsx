@@ -1,3 +1,4 @@
+import ConfirmAttendance from "./components/confirmAttendance/confirmAttendance";
 import { Countdown } from "./components/countdown/countdown";
 import { Greeting } from "./components/greeting/greeting";
 import InformationWedding from "./components/informationWedding/informationWedding";
@@ -12,6 +13,7 @@ export default function Home() {
       <Countdown />
       <Greeting />
       <InformationWedding />
+      <ConfirmAttendance />
     </div>
   );
 }
