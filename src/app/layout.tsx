@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Montserrat } from "next/font/google";
 import "./globals.css";
+import NavBar from "./components/navBar/navBar";
+import Loading from "./components/loading/loagin";
 
 /* Montserrat direto do Google */
 const montserrat = Montserrat({
@@ -35,7 +37,9 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${montserrat.variable} ${geistSans.variable} ${geistMono.variable}`}
     >
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-sans antialiased">
+        <Loading>{children}</Loading>
+      </body>
     </html>
   );
 }

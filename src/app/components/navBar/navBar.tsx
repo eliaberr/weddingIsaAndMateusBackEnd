@@ -39,7 +39,7 @@ export default function NavBar() {
         className="flex justify-between items-center desktop z-20"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 4, delay: 1, ease: "easeIn" }}
+        transition={{ duration: 4, delay: 5, ease: "easeIn" }}
       >
         <Image src="/assets/logo.png" width={90} height={10} alt="logo" />
         <div className="hidden lg:grid">
