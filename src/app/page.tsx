@@ -9,14 +9,14 @@ import NavBar from "./components/navBar/navBar";
 import Welcome from "./components/welcome/welcome";
 
 export default function Home() {
-  return (
-    <div>
-      <NavBar/>
-      <Welcome />
-      <Countdown />
-      <Greeting />
-      <InformationWedding />
-      <ConfirmAttendance />
-    </div>
-  );
+    return (
+        <div>
+            <NavBar />
+            <Welcome />
+            <Countdown />
+            <Greeting />
+            <InformationWedding />
+            <ConfirmAttendance />
+        </div>
+    );
 }
