@@ -14,15 +14,18 @@ export default function Loading({ children }: { children?: React.ReactNode }) {
 
   return (
     <div
-      className={`relative h-screen w-full ${showLoader ? "overflow-hidden" : ""}`}>
+      className={`relative h-screen w-full ${
+        showLoader ? "overflow-hidden" : ""
+      }`}
+    >
       <AnimatePresence>
         {showLoader && (
           <motion.div
             key="loader"
-            initial={{  opacity: 0, scale: 1.5 }}
+            initial={{ opacity: 0, scale: 1.5 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0, scale: 1 }}
-            transition={{ duration: 2}}
+            transition={{ duration: 2 }}
             className="fixed inset-0 z-50 flex justify-center items-center bg-white"
           >
             <Image

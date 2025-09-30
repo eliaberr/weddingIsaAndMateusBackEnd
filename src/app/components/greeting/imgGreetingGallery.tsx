@@ -4,7 +4,6 @@ import { motion } from "motion/react";
 import Image from "next/image";
 
 export function GreetingGallery() {
-  
   const imgsGreetingGallery = [
     {
       src: "/assets/imgGreetingGallery1.jpg",

@@ -12,7 +12,7 @@ export default function InformationWedding() {
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 5 }}
         viewport={{ once: true, amount: 0.1 }}
-        className="w-screen px-2 lg:px-0 lg:w-full"
+        className="w-screen px-2 lg:px-0 lg:w-full overflow-hidden"
       >
         <Image
           src="/assets/imgInformationWedding.png"

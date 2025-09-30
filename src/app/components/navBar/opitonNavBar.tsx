@@ -20,7 +20,11 @@ export function OptionNavBar() {
   return (
     <div className="flex flex-col lg:flex-row gap-7">
       {infoMenu.map((item, index) => (
-        <a className="cursor-pointer hover: hover:underline" key={index} href={item.link}>
+        <a
+          className="cursor-pointer hover: hover:underline"
+          key={index}
+          href={item.link}
+        >
           {item.name}
         </a>
       ))}

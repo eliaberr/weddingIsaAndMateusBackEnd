@@ -35,7 +35,6 @@ export default function HeartRain({ count = 18 }) {
             </span>
           ))}
         </div>
-
         <style>{`
         .heart{
           display:inline-block;

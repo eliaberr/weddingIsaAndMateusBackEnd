@@ -24,9 +24,7 @@ export default function NavBar() {
   return (
     <motion.nav
       className={`fixed top-0 z-20 w-screen h-28 flex items-center ${
-        scrolled
-          ? "shadow-md text-black"
-          : "bg-transparent text-white"
+        scrolled ? "shadow-md text-black" : "bg-transparent text-white"
       }`}
     >
       <motion.div
