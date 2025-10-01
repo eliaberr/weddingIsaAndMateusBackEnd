@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 
 export default function Welcome() {
   return (
-    <div className="overflow-hidden">
+    <div id="home" className="overflow-hidden">
       <motion.div
         className="bg-[url('/assets/backgraundWelcome.jpg')] bg-cover bg-center h-screen w-full relative overflow-hidden "
         initial={{ opacity: 0, scale: 1.05 }}

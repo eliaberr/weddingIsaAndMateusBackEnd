@@ -6,7 +6,7 @@ import { CardLocation } from "../informationWedding/cardLocation";
 
 export default function InformationWedding() {
   return (
-    <div className="my-20 text-center desktop">
+    <div id="weddingInformation" className="my-20 text-center desktop">
       <motion.div
         initial={{ opacity: 0, scale: 1.2 }}
         whileInView={{ opacity: 1, scale: 1 }}
