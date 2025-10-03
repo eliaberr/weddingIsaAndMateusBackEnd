@@ -23,7 +23,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Izabelly e Matheus",
   description:
-    "Izabela e Matheus vão celebrar o casamento em 16 de outubro de 2025. Acompanhe os detalhes e compartilhe esse momento especial conosco.",
+    "Izabelly e Matheus vão celebrar o casamento em 16 de outubro de 2025. Acompanhe os detalhes e compartilhe esse momento especial conosco.",
 };
 
 export default function RootLayout({
