@@ -6,13 +6,12 @@ import { CardLocation } from "../informationWedding/cardLocation";
 
 export default function InformationWedding() {
   return (
-    <div className="my-20 text-center desktop">
+    <div className="my-20 text-center px-2 lg:px-0 overflow-hidden lg:desktop">
       <motion.div
         initial={{ opacity: 0, scale: 1.2 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 5 }}
         viewport={{ once: true, amount: 0.1 }}
-        className="w-screen px-2 lg:px-0 lg:w-full overflow-hidden"
       >
         <Image
           src="/assets/imgInformationWedding.png"
@@ -27,9 +26,9 @@ export default function InformationWedding() {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 3 }}
         viewport={{ once: true, amount: 0.1 }}
-        className="w-screen px-2 lg:px-0 lg:w-full"
+        className="mx-auto desktop"
       >
-        <motion.div className="mt-15">
+        <div className="mt-15">
           <h2 className="font-medium text-2xl">
             Informações sobre o Casamento
           </h2>
@@ -37,7 +36,7 @@ export default function InformationWedding() {
             Com muita alegria, convidamos você para celebrar conosco este
             momento tão especial!
           </p>
-        </motion.div>
+        </div>
         <div className="mt-10 text-start grid gap-3">
           <p>
             Nosso casamento será realizado no{" "}

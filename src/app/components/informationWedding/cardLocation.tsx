@@ -25,7 +25,7 @@ export function CardLocation() {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 3 }}
       viewport={{ once: true, amount: 0.1 }}
-      className="mt-10 px-2 text-start"
+      className="mt-10 px-2 text-start lg:px-0 desktop"
     >
       <h2>Escolha o aplicativo de sua preferência para abrir a localização</h2>
       <div className="flex gap-4 mt-4">
